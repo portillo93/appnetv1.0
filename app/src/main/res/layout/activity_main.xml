@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.2"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/ip_adress" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/bit_de_red" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/encabezado2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_below="@id/encabezado"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/ipprincipal"
+            android:inputType="textUri|numberDecimal"
+            android:maxLength="16"
+            android:cursorVisible="true"
+            android:background="@color/colorEdt"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.09"
+            android:layout_height="wrap_content"
+            android:text="@string/division"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/mascarared"
+            android:inputType="number"
+            android:maxLength="2"
+            android:cursorVisible="true"
+            android:background="@color/colorEdt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/encabezado3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/encabezado2"
+        >
+
+        <TextView
+            android:id="@+id/text_enca3"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/id_de_red" />
+
+
+        <TextView
+            android:id="@+id/text_idred"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/encabezado4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/encabezado3"
+        >
+
+        <TextView
+            android:id="@+id/text_enca4"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/broadcast" />
+
+
+        <TextView
+            android:id="@+id/text_broadcast"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/encabezado5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_below="@id/encabezado4"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/ip" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:text="@string/host" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/encabezado6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_below="@id/encabezado5"
+        >
+        <TextView
+            android:id="@+id/text_host"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/text_pared"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/encabezado7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_below="@id/encabezado6">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/route"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/encabezado"
+        android:layout_alignLeft="@id/encabezado"
+        android:layout_below="@id/encabezado7"
+        >
+        <TextView
+            android:id="@+id/text_parost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/proceso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#06a49c"
+            android:text="@string/procesar"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

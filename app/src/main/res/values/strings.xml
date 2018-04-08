@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppNet</string>
+    <string name="ip_adress">Direccion IP:</string>
+    <string name="bit_de_red">Bit de red:</string>
+    <string name="id_de_red">Id de red</string>
+    <string name="division">/</string>
+    <string name="broadcast">Broadcast</string>
+    <string name="ip">Cant. host:</string>
+    <string name="host">Parte host:</string>
+    <string name="route">Parte red:</string>
+    <string name="procesar">PROCESAR</string>
+</resources>
